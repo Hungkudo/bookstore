@@ -8,7 +8,8 @@ const ListAccount = () => {
     useEffect(()=>{
         const fetchAllBooks = async () => {
             try {
-                const res = await axios.get("http://localhost:8888/account")
+                const res = await axios.get("http://localhost:8080/account")
+                //nhớ sửa lại cổng đoạn này nha
                 setBooks(res.data);
             } catch (err) {
                 console.log(err)
